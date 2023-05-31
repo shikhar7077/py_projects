@@ -26,7 +26,7 @@ def resumesong():
 
 #name of music player
 root=Tk()
-root.title("Vikesh's Music Player")
+root.title("Shivam's Music Player")
 
 mixer.init()
 songstatus=StringVar()
@@ -37,7 +37,7 @@ songstatus.set("choosing")
 playlist=Listbox(root,selectmode=SINGLE,bg="orange",fg="Black",font=('Helvetica',15),width=40)
 playlist.grid(columnspan=5)
 
-os.chdir(r'C:\Users\VIKESH\Documents\python\music_playlist')
+os.chdir(r'C:\Users\Shivam\Music\shivam')
 songs=os.listdir()
 for s in songs:
     playlist.insert(END,s)
