@@ -12,7 +12,7 @@ def open_file():
     with open(filepath, "r") as input_file:
         text = input_file.read()
         txt_edit.insert(tk.END, text)
-    window.title(f"Vikesh's Text Editor - {filepath}")
+    window.title(f"Shivam's Text Editor - {D:\Telegram Desktop\Shivam's notpad}")
 
 def save_file():
     """Save the current file as a new file."""
@@ -25,10 +25,10 @@ def save_file():
     with open(filepath, "w") as output_file:
         text = txt_edit.get(1.0, tk.END)
         output_file.write(text)
-    window.title(f"Vikesh's Text Editor - {filepath}")
+    window.title(f"Shivam's Text Editor - {D:\Telegram Desktop\Shivam's notpad}")
 
 window = tk.Tk()
-window.title("Vikesh's Text Editor")
+window.title("Shivam's Text Editor")
 window.rowconfigure(0, minsize=800, weight=1)
 window.columnconfigure(1, minsize=800, weight=1)
 
